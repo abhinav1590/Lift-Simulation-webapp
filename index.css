@@ -4,10 +4,6 @@
     padding: 0;
 }
 body {
-    background-color: rgb(255, 255, 255);
-}
-.box {
-    height: 600px;
     background-color:  #faebd7;
 }
 #container {  
@@ -18,7 +14,7 @@ body {
 #lift {
     margin: 0 15vw;
     position:absolute;
-    top: 405px;
+    top: 403px;
     background-color: #0057e7;
     right: 50px;
     height: 80px;
@@ -69,4 +65,3 @@ button {
     background-color: #ee4035;
     color: black;
 }
-
