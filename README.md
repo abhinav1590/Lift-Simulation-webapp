@@ -1,6 +1,6 @@
 # Lift-Simulation-webapp
-> A web app that can simulate lift mechanics(
-[link](https://lift-simulation-by-abhinav.netlify.app/) to the webpage)
+**A web app that can simulate lift mechanics(
+[link](https://lift-simulation-by-abhinav.netlify.app/) to the webpage)**
 
 ## UI design-
 ![UI](UI.png)
