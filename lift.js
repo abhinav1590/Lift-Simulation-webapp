@@ -1,7 +1,7 @@
 const lift= document.getElementById('lift');
 const callBtn= document.querySelectorAll('button');
 const t1 = '1.5s'
-const t2 = '3.4s'
+const t2 = '3.0s'
 function moveLift(el){
   var position = parseFloat(lift.style.bottom);
   if(position >= 62.2 || position <=33.4)
