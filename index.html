@@ -5,82 +5,66 @@
         <meta name="viewport" content="width=device-width">
         <link rel='stylesheet' href='index.css'>
         <title>Lift Simulation</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <style>
-        body {
-            font-family: 'Roboto';
-            }
-        </style>
     </head>
     <hr>
     <body>
         <header><h1>LIFT SIMULATION</h1></header>
          <div id="container">
-            <div id ="lift"><div><hr class='line'></div></div>
-            
-            <div class='floor1'>
-                <button class='button-down' onClick ="MoveToFloor10()">DOWN</button>
+
+            <div class='floor10'>
+                <button class='button-down' id="level10">DOWN</button>
                 <h4>FLOOR 10</h4><hr>
              </div>
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor9()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor9()">DOWN</button>
+             <div class='floor9'>
+                <div><button class='button-up' id="level9">UP</button></div>
+                <button class='button-down' id="level9" >DOWN</button>
                 <h4>FLOOR 9</h4><hr>
-             </div>
-
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor8()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor8()">DOWN</button>
-                <h4>FLOOR 8</h4><hr>
-             </div>
-
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor7()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor7()">DOWN</button>
+                </div>
+            <div class='floor8'>
+               <div><button class='button-up' id="level8">UP</button></div>
+               <button class='button-down'id="level8">DOWN</button>
+               <h4>FLOOR 8</h4><hr>
+            </div>
+            <div class='floor7'>
+                <div><button class='button-up' id="level7">UP</button></div>
+                <button class='button-down' id="level7" >DOWN</button>
                 <h4>FLOOR 7</h4><hr>
-             </div>
-
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor6()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor6()">DOWN</button>
-                <h4>FLOOR 6</h4><hr>
-             </div>
-
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor5()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor5()">DOWN</button>
+                </div>
+            <div class='floor6'>
+               <div><button class='button-up' id="level6">UP</button></div>
+               <button class='button-down'id="level6">DOWN</button>
+               <h4>FLOOR 6</h4><hr>
+            </div>
+            <div class='floor5'>
+                <div><button class='button-up' id="level5">UP</button></div>
+                <button class='button-down' id="level5" >DOWN</button>
                 <h4>FLOOR 5</h4><hr>
-             </div>
-
-            <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor4()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor4()">DOWN</button>
-                <h4>FLOOR 4</h4><hr>
-             </div>
-
-             <div class='floor'>
-                 <div><button class='button-up' onClick ="MoveUpFloor3()">UP</button></div>
-                 <button class='button-down' onClick ="MoveDownFloor3()" >DOWN</button>
+                </div>
+            <div class='floor4'>
+               <div><button class='button-up' id="level4">UP</button></div>
+               <button class='button-down'id="level4">DOWN</button>
+               <h4>FLOOR 4</h4><hr>
+            </div>
+             <div class='floor3'>
+                 <div><button class='button-up' id="level3">UP</button></div>
+                 <button class='button-down' id="level3" >DOWN</button>
                  <h4>FLOOR 3</h4><hr>
                  </div>
-             <div class='floor'>
-                <div><button class='button-up' onClick ="MoveUpFloor2()">UP</button></div>
-                <button class='button-down' onClick ="MoveDownFloor2()">DOWN</button>
-                <h4>FLOOR 2</h4>
+             <div class='floor2'>
+                <div><button class='button-up' id="level2">UP</button></div>
+                <button class='button-down'id="level2">DOWN</button>
+                <h4>FLOOR 2</h4><hr>
              </div>
-
-             <hr>
-             
              <div class='floor1'>
-              <button class='button-up' onClick ="MoveToFloor1()">UP</button>
-                <h4>FLOOR 1</h4>
-                <hr>
-                <div style="text-align: center;"> <br>  
-                    The contents of this website are deployed from this 
-                    <a href="https://github.com/abhinav1590/Lift-Simulation-webapp">repo</a>
-                    </div>
+              <button class='button-up' id="level1">UP</button>
+              <h4>FLOOR 1</h4><hr>
              </div>
+             <div style="text-align: center;"> <br>  
+                The contents of this website are deployed from this 
+                <a href="https://github.com/abhinav1590/Lift-Simulation-webapp">repo</a>
+                </div>
+             <div id ="lift"></div>
              </div>
-            <script type="text/javascript" src="simulation.js"></script>
+            <script type="text/javascript" src="lift.js"></script>
     </body>
 </html>
