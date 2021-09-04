@@ -9,7 +9,7 @@
 ### Available Features- 
 - A responsive web Design
 - A Total of 10 floors 
-- A single lift 
+- Two working lifts
   
 
 ### Upcoming Features-
