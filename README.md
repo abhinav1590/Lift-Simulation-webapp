@@ -1,8 +1,8 @@
 # Lift-Simulation-webapp
 A web app that can simulate lift mechanics
 
-# Current UI-
-![Screenshot 2021-09-04 124917](Screenshot 2021-09-04 124917.png "Screenshot 2021-09-04 124917")
+# UI design-
+![UI](UI.png)
 
 
 # Features that are available- 
