@@ -2,7 +2,7 @@
 A web app that can simulate lift mechanics
 
 # Current UI-
-![Image of webpage]
+![Image of webpage](Screenshot 2021-09-04 124917.png "UI design")
 
 
 # Features that are available- 
