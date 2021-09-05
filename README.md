@@ -3,13 +3,13 @@
 [link](https://lift-simulation-by-abhinav.netlify.app/) to the webpage)**
 
 ## UI design-
-![UI](UI.png)
+![UI](image/UI_NEW.png)
 
 
 ### Available Features- 
 - A responsive web Design
 - A Total of 10 floors 
-- Two working lifts
+- Three working lifts
   
 
 ### Upcoming Features-
