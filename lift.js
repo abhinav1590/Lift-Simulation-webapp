@@ -53,7 +53,7 @@ function moveLift(el){
       break;
 
     case 'level5':
-      if(position > 62.2 && position1 >= 23.8 && position1 <= 62.2)
+      if(position > 52.4 && position1 >= 23.8 && position1 <= 62.2)
       lift1.style.bottom = '42.7%';
       else if(position1 >=62.2 && position2 >= 23.8)
       lift2.style.bottom ='42.7%';
@@ -62,7 +62,7 @@ function moveLift(el){
       break;
 
     case 'level4':
-      if( position >= 52.4 && position1 < 52.4)
+      if( position >= 42.7 && position1 < 52.4)
       lift1.style.bottom='33.4%';
       else if(position1 >= 52.4)
       lift2.style.bottom='33.4%';
