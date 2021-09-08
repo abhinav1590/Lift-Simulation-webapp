@@ -15,7 +15,6 @@ body {
     position:absolute;
     bottom: 5.3%;
     background-color: #414141;
-    right: 220px;
     left: 20%;
     height: 90px;
     width: 70px;
@@ -27,7 +26,6 @@ body {
     position:absolute;
     bottom: 5.3%;
     background-color: #414141;
-    right: 120px;
     left: 40%;
     height: 90px;
     width: 70px;
@@ -39,7 +37,7 @@ body {
     position:absolute;
     bottom: 5.3%;
     background-color: #414141;
-    right: 20px;
+
     left: 60%;
     height: 90px;
     width: 70px;
