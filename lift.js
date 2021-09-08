@@ -1,13 +1,22 @@
 const lift= document.getElementById('lift_1');
 const lift1=document.getElementById('lift_2');
 const lift2= document.getElementById('lift_3');
+
 const callBtn= document.querySelectorAll('button');
+let counter = true;
 
 function moveLift(el){
 
   var position = parseFloat(lift.style.bottom);
   var position1 = parseFloat(lift1.style.bottom);
   var position2 = parseFloat(lift2.style.bottom);
+
+  if(counter){
+      lift2.style.bottom = '5.3%';
+      lift1.style.bottom = '5.3%';
+      lift.style.bottom = '5.3%';
+      counter = false;
+  }
 
   switch(el.id){
 
@@ -34,7 +43,8 @@ function moveLift(el){
       break;
 
     case 'level6':
-      if(position >62.2 && position1 >= 33.4 && position1 < 71.7)
+      if(position >62.2 && position1 >= 33.4 
+        && position1 <= 71.7 && position2!= 42.7)
       lift1.style.bottom = '52.4%';
       else if(position1 >=71.7 && position2 >= 33.4)
       lift2.style.bottom = '52.4%';
@@ -43,7 +53,7 @@ function moveLift(el){
       break;
 
     case 'level5':
-      if(position > 62.2 && position1 >= 23.8 && position1 < 62.2)
+      if(position > 62.2 && position1 >= 23.8 && position1 <= 62.2)
       lift1.style.bottom = '42.7%';
       else if(position1 >=62.2 && position2 >= 23.8)
       lift2.style.bottom ='42.7%';
@@ -77,12 +87,12 @@ function moveLift(el){
       else
       lift.style.bottom='14.6%';
       break;
-
     case 'level1':
       lift2.style.bottom = '5.3%';
       lift1.style.bottom = '5.3%';
       lift.style.bottom = '5.3%';
       break;
+        
   }
 }
 
