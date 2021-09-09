@@ -4,7 +4,7 @@
     margin: 0px;
 }
 body {
-    background-color:  #faebd7;
+    background-color:  #121212;
 }
 #container {  
     margin: 50px 10vw ;
@@ -14,13 +14,17 @@ img {
     width: 80px;
     height: 90px;
 }
+p{
+    text-align: center;
+    color: #f59b2d;
+}
 #lift_1 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #faebd7;
-    left: 20%;
+    background-color: #121212;
+    right: 50%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
@@ -31,8 +35,8 @@ img {
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #faebd7;
-    left: 40%;
+    background-color: #121212;
+    right: 30%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
@@ -43,15 +47,16 @@ img {
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #faebd7;
-    left: 60%;
+    background-color: #121212;
+    right: 10%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
     border: 0px solid black;
 }
 hr {
-    border: 1px solid rgb(20, 6, 17);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
 }
 .lift {
     border: 1px solid rgb(0, 0, 0);
@@ -135,11 +140,11 @@ button {
 }
 .button-up {
     width: 66px;
-    background-color:#4228b8;
+    background-color:#590794;
     color: rgb(0, 0, 0);
 }
 .button-down {
     width: 66px;
-    background-color: #f59b2d;
+    background-color: #b9731d;
     color: rgb(0, 0, 0);
 }
