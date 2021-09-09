@@ -140,11 +140,11 @@ button {
 }
 .button-up {
     width: 66px;
-    background-color:#FFFFFF;
-    color: rgb(0, 0, 0);
+    background-color:#590794;
+    color:  #FFFFFF;
 }
 .button-down {
     width: 66px;
-    background-color: #FFFFFF;
-    color: rgb(0, 0, 0);
+    background-color: #b9731d;
+    color:  #FFFFFF;
 }
