@@ -16,9 +16,10 @@ function moveLift(el){
   var position2 = parseFloat(lift2.style.bottom);
 
   if(counter){
-      lift2.style.bottom = '5.3%';
-      lift1.style.bottom = '5.3%';
-      lift.style.bottom = '5.3%';
+      liftTrans(lift,5,position);
+      lift2.style.bottom = '5%';
+      lift1.style.bottom = '5%';
+      lift.style.bottom = '5%';
       counter = false;
   }
 
