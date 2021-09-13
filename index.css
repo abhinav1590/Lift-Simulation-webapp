@@ -23,39 +23,33 @@ p{
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #121212;
     right: 45%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
-    border: 0px solid black;
 }
 #lift_2 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #121212;
     right: 25%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
-    border: 0px solid black;
 }
 #lift_3 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    background-color: #121212;
     right: 5%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
-    border: 0px solid black;
 }
 hr {
-    border: 5px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
 }
 .lift {
