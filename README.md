@@ -3,7 +3,7 @@
 [link](https://lift-simulation-by-abhinav.netlify.app/) to the webpage)**
 
 ## UI design-
-![UI](image/UI_NEW.png)
+![UI](image/UI_DARK.png)
 
 
 ### Available Features- 
