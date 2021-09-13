@@ -24,7 +24,7 @@ p{
     border-radius: 5px;
     bottom: 5%;
     background-color: #121212;
-    right: 50%;
+    right: 45%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
@@ -36,7 +36,7 @@ p{
     border-radius: 5px;
     bottom: 5%;
     background-color: #121212;
-    right: 30%;
+    right: 25%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
@@ -48,7 +48,7 @@ p{
     border-radius: 5px;
     bottom: 5%;
     background-color: #121212;
-    right: 10%;
+    right: 5%;
     height: 90px;
     width: 80px;
     transition-duration: 3s;
@@ -141,10 +141,10 @@ button {
 .button-up {
     width: 66px;
     background-color:#590794;
-    color:  #FFFFFF;
+    color: rgb(0, 0, 0);
 }
 .button-down {
     width: 66px;
     background-color: #b9731d;
-    color:  #FFFFFF;
+    color: rgb(0, 0, 0);
 }
