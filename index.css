@@ -26,7 +26,6 @@ p{
     right: 45%;
     height: 100px;
     width: 80px;
-    transition-duration: 3s;
 }
 #lift_2 {
     margin: 0 5vw;
@@ -36,7 +35,6 @@ p{
     right: 25%;
     height: 100px;
     width: 80px;
-    transition-duration: 3s;
 }
 #lift_3 {
     margin: 0 5vw;
@@ -46,7 +44,6 @@ p{
     right: 5%;
     height: 100px;
     width: 80px;
-    transition-duration: 3s;
 }
 hr {
     border: 2px solid rgb(0, 0, 0);
