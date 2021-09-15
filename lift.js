@@ -5,10 +5,10 @@ const lift2= document.getElementById('lift_3');
 const callBtn= document.querySelectorAll('button');
 let counter = true;
 
-function liftTrans(lift_array,initial_pos){
+function liftTrans(liftArray,initial_pos){
 
   const trans = 2;
-  lift_array.forEach(function(item){
+  liftArray.forEach(function(item){
     item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';
   })
 }
