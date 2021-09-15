@@ -8,9 +8,8 @@ let counter = true;
 function liftTrans(liftArray,initial_pos){
 
   const trans = 2;
-  liftArray.forEach(function(item){
-    item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';
-  })
+  liftArray.forEach(item => 
+    {item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';});
 }
 
 function moveLift(el){
@@ -19,7 +18,7 @@ function moveLift(el){
   var position = [parseInt(lift.style.bottom),parseInt(lift1.style.bottom),parseInt(lift2.style.bottom)];
   
   if(counter){
-    liftArray.forEach(function(lift){lift.style.bottom = '5%';})
+    liftArray.forEach(lift => {lift.style.bottom = '5%';})
     counter = false;
   }
   switch(el.id){
@@ -102,7 +101,7 @@ function moveLift(el){
       break;
     case 'level1':
       liftTrans(liftArray,5);
-      liftArray.forEach(function(lift){lift.style.bottom = '5%';})
+      liftArray.forEach(lift => {lift.style.bottom = '5%';})
       break;
         
   }
