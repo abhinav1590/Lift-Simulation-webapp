@@ -63,7 +63,7 @@ function moveLift(el){
     case 'level5':
       liftTrans(liftArray,45);
       if(position[0] > 55 && position[1] >= 15 
-      && position[1] <= 55 && position [2] < 25 )
+      && position[1] <= 55 && position [2] <= 35 )
       lift1.style.bottom = '45%';
       else if(position[1] >55 && position[2] >= 15)
       lift2.style.bottom ='45%';
