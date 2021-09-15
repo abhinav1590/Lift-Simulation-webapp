@@ -14,4 +14,4 @@
 
 ### Upcoming Features-
 - A page where user can input the number of floors and lifts 
-- A better UI design
+- A door in all the lifts
