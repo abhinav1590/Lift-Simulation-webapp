@@ -16,10 +16,7 @@ function liftTrans(liftArray,initial_pos){
 function moveLift(el){
 
   const liftArray = [lift, lift1, lift2];
-  var position = parseInt(lift.style.bottom);
-  var position1 = parseInt(lift1.style.bottom);
-  var position2 = parseInt(lift2.style.bottom);
-
+  var position = [parseInt(lift.style.bottom),parseInt(lift1.style.bottom),parseInt(lift2.style.bottom)];
   if(counter){
     lift2.style.bottom = '5%';
     lift1.style.bottom = '5%';
@@ -40,7 +37,7 @@ function moveLift(el){
 
     case 'level8':
       liftTrans(liftArray,75);
-      if(position >85 && position1 >=55)
+      if(position[0] >85 && position[1] >=55)
       lift1.style.bottom='75%';
       else
       lift.style.bottom='75%';
@@ -48,7 +45,7 @@ function moveLift(el){
 
     case 'level7':
       liftTrans(liftArray,65);
-      if(position > 75 && position1 >= 45)
+      if(position[0] > 75 && position[1] >= 45)
       lift1.style.bottom = '65%';
       else
       lift.style.bottom='65%';
@@ -56,10 +53,10 @@ function moveLift(el){
 
     case 'level6':
       liftTrans(liftArray,55);
-        if(position > 65 && position1 >= 35
-        && position1 <= 75 && position2 < 45)
+        if(position[0] > 65 && position[1] >= 35
+        && position[1] <= 75 && position[2] < 45)
         lift1.style.bottom = '55%';
-        else if(position1 >=65 && position2 >= 35)
+        else if(position[1] >=65 && position[2] >= 35)
         lift2.style.bottom = '55%';
         else
         lift.style.bottom='55%';
@@ -67,9 +64,9 @@ function moveLift(el){
 
     case 'level5':
       liftTrans(liftArray,45);
-      if(position > 55 && position1 >= 25 && position1 <= 65)
+      if(position[0] > 55 && position[1] >= 25 && position[1] <= 65)
       lift1.style.bottom = '45%';
-      else if(position1 >55 && position2 >= 25)
+      else if(position[1] >55 && position[2] >= 25)
       lift2.style.bottom ='45%';
       else
       lift.style.bottom='45%';
@@ -77,9 +74,9 @@ function moveLift(el){
 
     case 'level4':
       liftTrans(liftArray,35);
-      if( position >= 45 && position1 < 55)
+      if( position[0] >= 45 && position[1] < 55)
       lift1.style.bottom='35%';
-      else if(position1 >= 55)
+      else if(position[1] >= 55)
       lift2.style.bottom='35%';
       else
       lift.style.bottom= '35%';
@@ -87,9 +84,9 @@ function moveLift(el){
       
     case 'level3':
       liftTrans(liftArray,25);
-      if(position >= 45 && position1 <45)
+      if(position[0] >= 45 && position[1] <45)
       lift1.style.bottom = '25%';
-      else if(position1 >=45)
+      else if(position[1] >=45)
       lift2.style.bottom = '25%';
       else
       lift.style.bottom='25%';
@@ -97,9 +94,9 @@ function moveLift(el){
 
     case 'level2':
       liftTrans(liftArray,15);
-      if(position >= 35 && position1 < 35)
+      if(position[0] >= 35 && position[1] < 35)
       lift1.style.bottom= '15.0%';
-      else if(position1 >= 35)
+      else if(position[1] >= 35)
       lift2.style.bottom = '15.0%';
       else
       lift.style.bottom='15.0%';
