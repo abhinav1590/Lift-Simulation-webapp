@@ -23,7 +23,7 @@ p{
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    right: 45%;
+    right: 65%;
     height: 100px;
     width: 80px;
 }
@@ -32,11 +32,20 @@ p{
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    right: 25%;
+    right: 45%;
     height: 100px;
     width: 80px;
 }
 #lift_3 {
+    margin: 0 5vw;
+    position:absolute;
+    border-radius: 5px;
+    bottom: 5%;
+    right: 25%;
+    height: 100px;
+    width: 80px;
+}
+#lift_4 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;

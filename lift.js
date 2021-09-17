@@ -1,108 +1,100 @@
 const lift= document.getElementById('lift_1');
 const lift1=document.getElementById('lift_2');
 const lift2= document.getElementById('lift_3');
+const lift3= document.getElementById('lift_4');
 
 const callBtn= document.querySelectorAll('button');
 let counter = true;
+const liftArray = [lift, lift1, lift2, lift3];
 
-function liftTrans(liftArray,initial_pos){
+function liftTrans(initial_pos){
 
   const trans = 2;
   liftArray.forEach(item => 
     {item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';});
 }
 
+function liftDistance(pos){
+
+  var distance1 = Math.abs((parseInt(liftArray[0].style.bottom) - pos));
+  var distance2 = Math.abs((parseInt(liftArray[1].style.bottom) - pos));
+  var distance3 = Math.abs((parseInt(liftArray[2].style.bottom) - pos));
+  var distance4 = Math.abs((parseInt(liftArray[3].style.bottom) - pos));
+
+  if(distance1 === distance2 && distance2 === distance3 && distance3 === distance4)
+  liftArray[0].style.bottom = pos.toString() +'%';
+  else if(distance1 < distance2 && distance1 < distance3 && distance1 < distance4)
+  liftArray[0].style.bottom = pos.toString() + '%';
+  else if(distance2 < distance1 && distance2 < distance3 && distance2 < distance4)
+  liftArray[1].style.bottom = pos.toString() + '%';
+  else if(distance3 < distance1 && distance3 < distance2 && distance3 < distance4)
+  liftArray[2].style.bottom = pos.toString() + '%';
+  else if(distance4 < distance1 && distance4 < distance2 && distance4 < distance3)
+  liftArray[3].style.bottom = pos.toString() + '%';
+  else if(distance1 == distance2)
+  liftArray[0].style.bottom = pos.toString() + '%';
+  else if(distance2 == distance3)
+  liftArray[1].style.bottom = pos.toString() + '%';
+  else if(distance3 == distance4)
+  liftArray[2].style.bottom = pos.toString() + '%';
+}
+
 function moveLift(el){
 
-  const liftArray = [lift, lift1, lift2];
-  var position = [parseInt(lift.style.bottom),parseInt(lift1.style.bottom),parseInt(lift2.style.bottom)];
-  
   if(counter){
     liftArray.forEach(lift => {lift.style.bottom = '5%';})
     counter = false;
   }
+
   switch(el.id){
 
     case 'level10':
-      liftTrans(liftArray,95);
+      liftTrans(95);
       lift.style.bottom = '95%';
       break;
 
     case 'level9':
-      liftTrans(liftArray,85);
+      liftTrans(85);
       lift.style.bottom='85%';
       break;
 
     case 'level8':
-      liftTrans(liftArray,75);
-      if(position[0] >85 && position[1] >=55)
-      lift1.style.bottom='75%';
-      else
-      lift.style.bottom='75%';
+      liftTrans(75);
+      liftDistance(75);
       break;
 
     case 'level7':
-      liftTrans(liftArray,65);
-      if(position[0] > 75 && position[1] >= 45)
-      lift1.style.bottom = '65%';
-      else
-      lift.style.bottom='65%';
+      liftTrans(65);
+      liftDistance(65);
       break;
 
     case 'level6':
-      liftTrans(liftArray,55);
-        if(position[0] > 65 && position[1] >= 35
-        && position[1] <= 75 && position[2] < 45)
-        lift1.style.bottom = '55%';
-        else if(position[1] >=65 && position[2] >= 35)
-        lift2.style.bottom = '55%';
-        else
-        lift.style.bottom='55%';
+      liftTrans(55);
+      liftDistance(55);
       break;
 
     case 'level5':
-      liftTrans(liftArray,45);
-      if(position[0] > 55 && position[1] >= 15 
-      && position[1] <= 55 && position [2] <= 35 )
-      lift1.style.bottom = '45%';
-      else if(position[1] >55 && position[2] >= 15)
-      lift2.style.bottom ='45%';
-      else
-      lift.style.bottom='45%';
+      liftTrans(45);
+      liftDistance(45);
       break;
 
     case 'level4':
-      liftTrans(liftArray,35);
-      if( position[0] >= 45 && position[1] < 55)
-      lift1.style.bottom='35%';
-      else if(position[1] >= 55)
-      lift2.style.bottom='35%';
-      else
-      lift.style.bottom= '35%';
+      liftTrans(35);
+      liftDistance(35);
       break;
       
     case 'level3':
-      liftTrans(liftArray,25);
-      if(position[0] >= 45 && position[1] <45)
-      lift1.style.bottom = '25%';
-      else if(position[1] >=45)
-      lift2.style.bottom = '25%';
-      else
-      lift.style.bottom='25%';
+      liftTrans(25);
+      liftDistance(25);
       break;
 
     case 'level2':
-      liftTrans(liftArray,15);
-      if(position[0] >= 35 && position[1] < 35)
-      lift1.style.bottom= '15.0%';
-      else if(position[1] >= 35)
-      lift2.style.bottom = '15.0%';
-      else
-      lift.style.bottom='15.0%';
+      liftTrans(15);
+      liftDistance(15);
       break;
     case 'level1':
-      liftTrans(liftArray,5);
-      liftArray.forEach(lift => {lift.style.bottom = '5%';})
+      liftTrans(5);
+      liftDistance(5);
       break;
         
   }
