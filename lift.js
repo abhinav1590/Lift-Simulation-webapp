@@ -16,33 +16,31 @@ function liftTrans(initial_pos){
 
 function liftDistance(pos){
 
-  var distance1 = Math.abs((parseInt(liftArray[0].style.bottom) - pos));
-  var distance2 = Math.abs((parseInt(liftArray[1].style.bottom) - pos));
-  var distance3 = Math.abs((parseInt(liftArray[2].style.bottom) - pos));
-  var distance4 = Math.abs((parseInt(liftArray[3].style.bottom) - pos));
+  var distance = [];
+  liftArray.forEach(item => {distance.push(Math.abs(parseInt(item.style.bottom) - pos));});
 
-  if(distance1 === distance2 && distance2 === distance3 && distance3 === distance4)
+  if(distance[0] === distance[1] && distance[1] === distance[2] && distance[2] === distance[3])
   liftArray[0].style.bottom = pos.toString() +'%';
-  else if(distance1 < distance2 && distance1 < distance3 && distance1 < distance4)
+  else if(distance[0] < distance[1] && distance[0] < distance[2] && distance[0] < distance[3])
   liftArray[0].style.bottom = pos.toString() + '%';
-  else if(distance2 < distance1 && distance2 < distance3 && distance2 < distance4)
+  else if(distance[1] < distance[0] && distance[1] < distance[2] && distance[1] < distance[3])
   liftArray[1].style.bottom = pos.toString() + '%';
-  else if(distance3 < distance1 && distance3 < distance2 && distance3 < distance4)
+  else if(distance[2] < distance[0] && distance[2] < distance[1] && distance[2] < distance[3])
   liftArray[2].style.bottom = pos.toString() + '%';
-  else if(distance4 < distance1 && distance4 < distance2 && distance4 < distance3)
+  else if(distance[3] < distance[0] && distance[3] < distance[1] && distance[3] < distance[2])
   liftArray[3].style.bottom = pos.toString() + '%';
-  else if(distance1 == distance2)
+  else if(distance[0] == distance[1])
   liftArray[0].style.bottom = pos.toString() + '%';
-  else if(distance2 == distance3)
+  else if(distance[1] == distance[2])
   liftArray[1].style.bottom = pos.toString() + '%';
-  else if(distance3 == distance4)
+  else if(distance[2] == distance[3])
   liftArray[2].style.bottom = pos.toString() + '%';
 }
 
 function moveLift(el){
 
   if(counter){
-    liftArray.forEach(lift => {lift.style.bottom = '5%';})
+    liftArray.forEach(lift => {lift.style.bottom = '5%';});
     counter = false;
   }
 
@@ -94,7 +92,7 @@ function moveLift(el){
       break;
     case 'level1':
       liftTrans(5);
-      liftDistance(5);
+      liftArray.forEach(lift => {lift.style.bottom = '5%';});
       break;
         
   }
