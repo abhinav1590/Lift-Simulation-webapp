@@ -62,7 +62,7 @@ footer {
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    right: 65%;
+    right: 50%;
     height: 100px;
     width: 80px;
 }
@@ -71,7 +71,7 @@ footer {
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    right: 45%;
+    right: 35%;
     height: 100px;
     width: 80px;
 }
@@ -80,7 +80,7 @@ footer {
     position:absolute;
     border-radius: 5px;
     bottom: 5%;
-    right: 25%;
+    right: 20%;
     height: 100px;
     width: 80px;
 }
@@ -129,11 +129,11 @@ button {
 }
 .floor10 {
     position: relative;
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .floor9 {
     position: relative;
@@ -141,7 +141,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .floor8 {
     position: relative;
@@ -149,7 +149,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 
 }
 .floor7 {
@@ -158,7 +158,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .floor6 {
     position: relative;
@@ -166,7 +166,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 
 }
 .floor5 {
@@ -175,7 +175,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
   
 }
 .floor4 {
@@ -184,7 +184,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 
 }
 .floor3 {
@@ -193,7 +193,7 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .floor2 {
     position: relative;
@@ -201,15 +201,15 @@ button {
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .floor1 {
     position: relative;
-    padding-top: 80px;
+    padding-top: 70px;
     text-align: left;
     animation: glowing 3s infinite;
     border-radius: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 .button-up {
     width: 66px;
