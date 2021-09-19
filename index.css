@@ -13,7 +13,7 @@ img {
     width: 80px;
     height: 110px;
 }
-@keyframes glowing {
+/* @keyframes glowing {
     0% {
       color: #fff;
       text-shadow: 0 0 5px #fff;
@@ -26,7 +26,7 @@ img {
       color: #fff;
       text-shadow: 0 0 5px #fff;
     }
-}
+} */
 footer {
     text-align: center;
     margin-left: 35%;
@@ -94,30 +94,32 @@ p{
     height: 100px;
     width: 80px;
 }
-.lift {
-    border: 1px solid rgb(0, 0, 0);
-}
 h1{
     text-align: center;
     color:  #f6cd61;
-    text-shadow:3px 3px #121212;
     padding-top: 50px;
-    animation: glowing 3s infinite;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 2px #c7c1b3,
+    0 0 2px #cec2a3,
+    0 0 12px #c113ec,
+    0 0 22px #f6cd61,
+    0 0 30px #f6cd61;
 }
 h4 {
     margin-right: 20px;
     padding-bottom: 30px;
     text-align: right;
     color:   #f59b2d;
-    text-shadow:3px 3px #121212;
+    text-shadow: 2px 2px #121212;
 }
 button {
     border: 2px solid black;
-    padding: 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    border-radius: 20px;
+    font-weight: bolder;
 }
 .floor10 {
     position: relative;
@@ -125,75 +127,75 @@ button {
     text-align: left;
     background-color: #8611da;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .floor9 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #8513d6;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .floor8 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #8112d1;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 
 }
 .floor7 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #8312d3;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .floor6 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #800ed1;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 
 }
 .floor5 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #7c0fca;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
   
 }
 .floor4 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #7c11c9;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 
 }
 .floor3 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #7d12c9;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .floor2 {
     position: relative;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     text-align: left;
     background-color: #7c0fc9;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .floor1 {
     position: relative;
@@ -201,17 +203,17 @@ button {
     text-align: left;
     background-color: #7511bd;
     border-radius: 40px;
-    margin: 5px;
+    margin: 6px;
 }
 .button-up {
-    width: 66px;
+    width: 70px;
+    height: 50px;
     margin-left: 2%;
     background-color:#590794;
-    color: rgb(0, 0, 0);
 }
 .button-down {
-    width: 66px;
+    width: 70px;
+    height: 50px;
     margin-left: 2%;
-    background-color: #b9731d;
-    color: rgb(0, 0, 0);
+    background-color: #ec952b;
 }
