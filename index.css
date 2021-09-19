@@ -11,20 +11,7 @@ body {
 }  
 img {
     width: 80px;
-    height: 100px;
-}
-p{
-    width: 30%;
-    position: absolute;
-    color: #f59b2d;
-    font-weight: bold;
-}
-.slider {
-    position: absolute;
-    width: 30%;
-    height: 2px;
-    cursor: pointer;
-    margin-left: 35%;
+    height: 110px;
 }
 @keyframes glowing {
     0% {
@@ -48,7 +35,9 @@ footer {
     cursor: pointer;
     font-weight: bold;
     color: #fff;
-    font-size: 16px;
+    margin-left: 45%;
+    padding-bottom: 40px;
+    font-size: 18px;
     text-shadow:
     0 0 7px #fff,
     0 0 2px #0fa,
@@ -56,6 +45,18 @@ footer {
     0 0 12px #0fa,
     0 0 22px #0fa,
     0 0 30px #0fa;
+}
+p{
+    position: absolute;
+    color: #f59b2d;
+    font-weight: bold;
+}
+.slider {
+    position: absolute;
+    width: 30vw;
+    height: 2px;
+    cursor: pointer;
+    margin-left: 35%;
 }
 #lift_1 {
     margin: 0 5vw;
@@ -132,24 +133,24 @@ button {
     position: relative;
     padding-top: 60px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #8611da;
+    border-radius: 40px;
     margin: 5px;
 }
 .floor9 {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #8513d6;
+    border-radius: 40px;
     margin: 5px;
 }
 .floor8 {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #8112d1;
+    border-radius: 40px;
     margin: 5px;
 
 }
@@ -157,16 +158,16 @@ button {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #8312d3;
+    border-radius: 40px;
     margin: 5px;
 }
 .floor6 {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #800ed1;
+    border-radius: 40px;
     margin: 5px;
 
 }
@@ -174,8 +175,8 @@ button {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #7c0fca;
+    border-radius: 40px;
     margin: 5px;
   
 }
@@ -183,8 +184,8 @@ button {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #7c11c9;
+    border-radius: 40px;
     margin: 5px;
 
 }
@@ -192,24 +193,24 @@ button {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #7d12c9;
+    border-radius: 40px;
     margin: 5px;
 }
 .floor2 {
     position: relative;
     padding-top: 20px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #7c0fc9;
+    border-radius: 40px;
     margin: 5px;
 }
 .floor1 {
     position: relative;
     padding-top: 70px;
     text-align: left;
-    animation: glowing 3s infinite;
-    border-radius: 20px;
+    background-color: #7511bd;
+    border-radius: 40px;
     margin: 5px;
 }
 .button-up {
