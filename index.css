@@ -15,16 +15,16 @@ img {
 }
 @keyframes glowing {
     0% {
-      background-color: #7511bd;
-      box-shadow: 0 0 5px #7511bd;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
     }
     50% {
-      background-color: #ac12ca;
-      box-shadow: 0 0 10px #ac12ca;
+      color: #f59b2d;
+      text-shadow: 0 0 20px #f59b2d;
     }
     100% {
-      background-color: #7511bd;
-      box-shadow: 0 0 5px #7511bd;
+      color: #fff;
+      text-shadow: 0 0 5px #fff;
     }
 }
 footer {
@@ -99,20 +99,10 @@ p{
 }
 h1{
     text-align: center;
-    margin-left:  2vw;
-    margin-right: 2vw;
     color:  #f6cd61;
     text-shadow:3px 3px #121212;
-    padding: 30px;
-    padding-top: 30px;
-    background-color: rgb(0, 0, 0);
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    padding-top: 50px;
     animation: glowing 3s infinite;
-}
-hr {
-    border: 1px solid #000000;
-    border-radius: 20px;
 }
 h4 {
     margin-right: 20px;
@@ -122,7 +112,7 @@ h4 {
     text-shadow:3px 3px #121212;
 }
 button {
-    border: none;
+    border: 2px solid black;
     padding: 10px;
     border-radius: 15px;
     font-weight: bold;
