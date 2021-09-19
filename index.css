@@ -131,7 +131,7 @@ button {
 }
 .floor9 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #8513d6;
     border-radius: 40px;
@@ -139,7 +139,7 @@ button {
 }
 .floor8 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #8112d1;
     border-radius: 40px;
@@ -148,7 +148,7 @@ button {
 }
 .floor7 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #8312d3;
     border-radius: 40px;
@@ -156,7 +156,7 @@ button {
 }
 .floor6 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #800ed1;
     border-radius: 40px;
@@ -165,7 +165,7 @@ button {
 }
 .floor5 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #7c0fca;
     border-radius: 40px;
@@ -174,7 +174,7 @@ button {
 }
 .floor4 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #7c11c9;
     border-radius: 40px;
@@ -183,7 +183,7 @@ button {
 }
 .floor3 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #7d12c9;
     border-radius: 40px;
@@ -191,7 +191,7 @@ button {
 }
 .floor2 {
     position: relative;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     text-align: left;
     background-color: #7c0fc9;
     border-radius: 40px;
