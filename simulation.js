@@ -1,8 +1,7 @@
-import {lift, lift1, lift2, lift3 } from "./lifts.js";
+import {liftArray} from "./lifts.js";
 import {slider, output, callBtn } from "./constants.js";
 
 let counter = true;
-const liftArray = [lift, lift1, lift2, lift3];
 
 var trans = 2;
 output.innerHTML = slider.value;
@@ -52,47 +51,47 @@ function moveLift(el){
 
     case 'level10':
       liftTrans(95);
-      lift.style.bottom = '95%';
+      liftArray[0].style.bottom = '92%';
       break;
 
     case 'level9':
       liftTrans(85);
-      lift.style.bottom='85%';
+      liftArray[0].style.bottom='84%';
       break;
 
     case 'level8':
       liftTrans(75);
-      liftDistance(75);
+      liftDistance(74);
       break;
 
     case 'level7':
       liftTrans(65);
-      liftDistance(65);
+      liftDistance(64);
       break;
 
     case 'level6':
       liftTrans(55);
-      liftDistance(55);
+      liftDistance(54);
       break;
 
     case 'level5':
       liftTrans(45);
-      liftDistance(45);
+      liftDistance(44);
       break;
 
     case 'level4':
       liftTrans(35);
-      liftDistance(35);
+      liftDistance(34);
       break;
       
     case 'level3':
       liftTrans(25);
-      liftDistance(25);
+      liftDistance(24);
       break;
 
     case 'level2':
       liftTrans(15);
-      liftDistance(15);
+      liftDistance(14);
       break;
     case 'level1':
       liftTrans(5);
