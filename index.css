@@ -207,13 +207,11 @@ button {
 }
 .button-up {
     width: 60px;
-    height: 30px;
     margin-left: 2%;
     background-color:#590794;
 }
 .button-down {
-    width: 60px;
-    height: 30px;
+    width: 60px;;
     margin-left: 2%;
     background-color: #ec952b;
 }
