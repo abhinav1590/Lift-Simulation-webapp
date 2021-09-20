@@ -29,47 +29,47 @@ function moveLift(el){
 
     case 'level10':
       liftTrans(95);
-      liftArray[0].style.bottom = '92%';
+      liftArray[0].style.bottom = '94%';
       break;
 
     case 'level9':
       liftTrans(85);
-      liftArray[0].style.bottom='84%';
+      liftArray[0].style.bottom='85%';
       break;
 
     case 'level8':
       liftTrans(75);
-      liftDistance(74);
+      liftDistance(75);
       break;
 
     case 'level7':
       liftTrans(65);
-      liftDistance(64);
+      liftDistance(65);
       break;
 
     case 'level6':
       liftTrans(55);
-      liftDistance(54);
+      liftDistance(55);
       break;
 
     case 'level5':
       liftTrans(45);
-      liftDistance(44);
+      liftDistance(45);
       break;
 
     case 'level4':
       liftTrans(35);
-      liftDistance(34);
+      liftDistance(35);
       break;
       
     case 'level3':
       liftTrans(25);
-      liftDistance(24);
+      liftDistance(25);
       break;
 
     case 'level2':
       liftTrans(15);
-      liftDistance(14);
+      liftDistance(15);
       break;
     case 'level1':
       liftTrans(5);
