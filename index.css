@@ -12,6 +12,11 @@ body {
 img {
     width: 80px;
     height: 110px;
+    transition: 40ms;
+}
+img:hover {
+    width: 85px;
+    height: 115px;
 }
 /* @keyframes glowing {
     0% {
@@ -31,32 +36,36 @@ footer {
     text-align: center;
     margin-left: 35%;
 }
-.code_button {
-    cursor: pointer;
+p{
+    position: absolute;
+    color:  #d72631;
     font-weight: bold;
+}
+.code {
+    cursor: pointer;
     color: #fff;
-    margin-left: 45%;
-    padding-bottom: 40px;
-    font-size: 18px;
+    left: 45%;
+    padding-bottom: 20px;
+    font-size: 10px;
     text-shadow:
     0 0 7px #fff,
-    0 0 2px #0fa,
-    0 0 2px #0fa,
     0 0 12px #0fa,
     0 0 22px #0fa,
     0 0 30px #0fa;
 }
-p{
-    position: absolute;
-    color: #f59b2d;
-    font-weight: bold;
-}
 .slider {
     position: absolute;
+    fill:black;
     width: 30vw;
     height: 2px;
     cursor: pointer;
-    margin-left: 35%;
+    padding: 10px 30px 10px 20px;
+    right: 25%;
+    transition: 1s;
+}
+.slider:hover{
+    right:28%;
+    width: 33vw;
 }
 #lift_1 {
     margin: 0 5vw;
@@ -104,22 +113,25 @@ h1{
     0 0 2px #cec2a3,
     0 0 12px #c113ec,
     0 0 22px #f6cd61,
-    0 0 30px #f6cd61;
+    0 0 30px #077b8a;
 }
 h4 {
     margin-right: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 18px;
     text-align: right;
-    color:   #f59b2d;
+    color:   #a2d5c6;
     text-shadow: 2px 2px #121212;
 }
 button {
-    border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     font-weight: bold;
+    transition: 10ms;
+}
+button:hover {
+    border-radius: 20px;
 }
 .floor10 {
     position: relative;
@@ -127,7 +139,7 @@ button {
     text-align: left;
     background-color: #8611da;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .floor9 {
     position: relative;
@@ -135,7 +147,7 @@ button {
     text-align: left;
     background-color: #8513d6;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .floor8 {
     position: relative;
@@ -143,7 +155,7 @@ button {
     text-align: left;
     background-color: #8112d1;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 
 }
 .floor7 {
@@ -152,7 +164,7 @@ button {
     text-align: left;
     background-color: #8312d3;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .floor6 {
     position: relative;
@@ -160,7 +172,7 @@ button {
     text-align: left;
     background-color: #800ed1;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 
 }
 .floor5 {
@@ -169,7 +181,7 @@ button {
     text-align: left;
     background-color: #7c0fca;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
   
 }
 .floor4 {
@@ -178,7 +190,7 @@ button {
     text-align: left;
     background-color: #7c11c9;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 
 }
 .floor3 {
@@ -187,7 +199,7 @@ button {
     text-align: left;
     background-color: #7d12c9;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .floor2 {
     position: relative;
@@ -195,7 +207,7 @@ button {
     text-align: left;
     background-color: #7c0fc9;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .floor1 {
     position: relative;
@@ -203,15 +215,17 @@ button {
     text-align: left;
     background-color: #7511bd;
     border-radius: 40px;
-    margin: 6px;
+    margin: 8px;
 }
 .button-up {
     width: 66px;
     margin-left: 2%;
-    background-color:#590794;
+    background-color:#6b7b8c;
+    border:dashed 1px;
 }
 .button-down {
     width: 66px;;
     margin-left: 2%;
-    background-color: #ec952b;
+    background-color: #f3ca20;
+    border:dashed 1px;
 }
