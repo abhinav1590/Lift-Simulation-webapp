@@ -66,7 +66,7 @@ p{
     right:32%;
     width: 32vw;
 }
-#lift_1 {
+#lift1 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
@@ -75,7 +75,7 @@ p{
     height: 100px;
     width: 80px;
 }
-#lift_2 {
+#lift2 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
@@ -84,7 +84,7 @@ p{
     height: 100px;
     width: 80px;
 }
-#lift_3 {
+#lift3 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
@@ -93,7 +93,7 @@ p{
     height: 100px;
     width: 80px;
 }
-#lift_4 {
+#lift4 {
     margin: 0 5vw;
     position:absolute;
     border-radius: 5px;
