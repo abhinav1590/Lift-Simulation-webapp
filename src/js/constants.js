@@ -1,4 +1,4 @@
-// all constants come here other than lift
-export const slider = document.getElementById("transitionRange");
-export const output = document.getElementById("range");
+// all constants come here 
 export const callBtn= document.querySelectorAll('button');
+export const varButton = document.getElementById('variable');
+export const buttonId = document.getElementById('buttonId');

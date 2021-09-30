@@ -1,27 +1,25 @@
 import { liftArray } from "./lifts.js";
 
 function liftDistance(pos){
-
+    
     var distance = [];
     liftArray.forEach(item => {distance.push(Math.abs(parseInt(item.style.bottom) - pos));});
-  
-    if(distance[0] === distance[1] && distance[1] === distance[2] && distance[2] === distance[3])
-    liftArray[0].style.bottom = pos.toString() +'%';
-    else if(distance[0] < distance[1] && distance[0] < distance[2] && distance[0] < distance[3])
-    liftArray[0].style.bottom = pos.toString() + '%';
-    else if(distance[1] < distance[0] && distance[1] < distance[2] && distance[1] < distance[3])
-    liftArray[1].style.bottom = pos.toString() + '%';
-    else if(distance[2] < distance[0] && distance[2] < distance[1] && distance[2] < distance[3])
-    liftArray[2].style.bottom = pos.toString() + '%';
-    else if(distance[3] < distance[0] && distance[3] < distance[1] && distance[3] < distance[2])
-    liftArray[3].style.bottom = pos.toString() + '%';
-    else if(distance[0] == distance[1])
-    liftArray[0].style.bottom = pos.toString() + '%';
-    else if(distance[1] == distance[2])
-    liftArray[1].style.bottom = pos.toString() + '%';
-    else if(distance[2] == distance[3])
-    liftArray[2].style.bottom = pos.toString() + '%';
+    
+    let position = 0;
+    const ClosestLift = (array) => {
+        let first=array[0],count = 0 ;
+        for (let i = 0; i < array.length; i ++)
+        {   if (array[i] < first)
+            {
+                first = array[i];
+                count = i;
+            }
+        }
+        return count;
+    }
+    // return the closest lift from a given position
+    position = ClosestLift(distance);
+    liftArray[position].style.bottom = pos.toString() + '%';
 }
 
 export { liftDistance };
-
