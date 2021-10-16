@@ -2,10 +2,11 @@
     font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body {
-    background-color:  #121212
+    background-color:#818181;
 }
-#container {  
-    margin: 10px 5vw ;
+#container { 
+    margin: 0;
+    padding: 0;
     position: relative;
 }  
 img {
@@ -28,28 +29,26 @@ footer {
     font-size: 10px;
     font-weight: bolder;
     text-shadow:
-    0 0 7px #fff,
-    0 0 12px #0fa,
-    0 0 22px #0fa,
-    0 0 30px #0fa;
+    0 0 7px #080808,
+    0 0 12px #4D4352,
+    0 0 22px #4D4352,
+    0 0 30px #4D4352;
 }
 .transition {
-    margin: 0px 7vw;
     display: flex;
+    margin-left: 8px;
     position: relative;
 }
 .transition input {
-    background-color: #121212;
+    background-color: #818181;
     color: red;
     font-weight: bolder;
-    width: 60px;
-    height: 30px;
     border: none;
     border-radius: 10px;
-    margin: 20px 0 0 20px;
+    margin: 15px 10px 10px 12px;
 }
 .transition p {
-    color: gray;
+    color: 	#101010;
     font-weight: bold;
     padding-top: 7px;
 }
@@ -93,41 +92,35 @@ footer {
 }
 h1{
     text-align: center;
-    color:  #f6cd61;
-    padding-top: 50px;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 2px #c7c1b3,
-    0 0 2px #cec2a3,
-    0 0 12px #c113ec,
-    0 0 22px #f6cd61,
-    0 0 30px #077b8a;
+    padding-top: 20px;
+    color: #201925;
 }
 h4 {
     margin:0 20px 0 0 ;
     padding:0 0 18px 0;
     text-align: right;
-    color:   #a2d5c6;
+    color:   #fff;
     text-shadow: 2px 2px #121212;
 }
 button {
     width: 66px;
     margin: 20px 0 0 2%;
     padding: 10px 0 10px 0;
-    border:dashed 1px;
+    border: none; 
     border-radius: 15px;
     font-weight: bold;
+    border: 1px solid black;
 }
 button:hover {
     border-radius: 20px;
 }
 #floor-constant {
+    border: 5px solid black;
+    margin: 8px;
+    border-radius: 8px;
     position: relative;
-    padding-top: 10px;
     text-align: left;
     background-color: #8513d6;
-    border-radius: 40px;
-    margin: 8px;
 }
 .button-up {
     background-color:#6b7b8c;

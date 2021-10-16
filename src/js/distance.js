@@ -17,7 +17,7 @@ function liftDistance(pos){
         }
         return count;
     }
-    // return the closest lift from a given position
+    // The closest lift is called 
     position = ClosestLift(distance);
     liftArray[position].style.bottom = pos.toString() + '%';
 }
