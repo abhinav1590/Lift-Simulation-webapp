@@ -65,7 +65,15 @@ footer {
     width: 80px;
     /* transition-delay: 2.5s; */
 }
-@keyframes door {
+@keyframes closeDoor {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 34px;
+    }
+}
+@keyframes openDoor {
     from {
         width: 34px;
     }
@@ -73,14 +81,13 @@ footer {
         width: 0px;
     }
 }
-#lift-left-door {
+.lift-left-door {
     margin: 4.5px;
     height: 90px;
     width: 34px;
     background-color: #a19f9f;
-    animation: door 2.5s 1 .5s;
 }
-#lift-right-door {
+.lift-right-door {
     position: absolute;
     top: 0;
     right: 0;
@@ -88,7 +95,6 @@ footer {
     height: 90px;
     width: 34px;
     background-color: #a19f9f;
-    animation: door 2.5s 1 .5s;
 }
 h1{
     text-align: center;

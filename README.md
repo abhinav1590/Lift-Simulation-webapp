@@ -7,7 +7,7 @@
 </p>
 <h2>Preview:</h2>
 <p float="left">
-    <img src="src/image/UI_design_top.png" width="480" />
-    <img src="src/image/UI_design.png" width="480" />
+    <img src="src/image/UI_design_top.png" width="250" />
+    <img src="src/image/UI_design.png" width="250" />
 </p>
 <br>

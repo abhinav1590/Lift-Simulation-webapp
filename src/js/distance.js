@@ -1,11 +1,11 @@
-import { liftArray } from "./lifts.js";
+import { liftArray,leftDoors, rightDoors } from "./lifts.js";
 
-function liftDistance(pos){
+let liftSel, doorLeft, doorRight ;
+const liftDistance = (pos) => {
     
     var distance = [];
     liftArray.forEach(item => {distance.push(Math.abs(parseInt(item.style.bottom) - pos));});
     
-    let position = 0;
     const ClosestLift = (array) => {
         let first=array[0],count = 0 ;
         for (let i = 0; i < array.length; i ++)
@@ -18,8 +18,24 @@ function liftDistance(pos){
         return count;
     }
     // The closest lift is called 
-    position = ClosestLift(distance);
+    var position = ClosestLift(distance);
+    liftSel = liftArray[position];
+    doorLeft = leftDoors[position];
+    doorRight = rightDoors[position];
     liftArray[position].style.bottom = pos.toString() + '%';
 }
 
-export { liftDistance };
+const addAnimation = () => {
+    liftSel.addEventListener('transitionend', () => {
+        doorLeft.style.animation = 'openDoor 2.5s';
+        doorRight.style.animation = 'openDoor 2.5s';
+    });
+    liftSel.addEventListener('animationend', () => {
+        doorLeft.style.animation = 'closeDoor 2.5s';
+    doorRight.style.animation = 'closeDoor 2.5s';
+    });
+    doorLeft.style.removeProperty('animation');
+    doorRight.style.removeProperty('animation');
+}
+
+export {liftDistance, addAnimation}; 

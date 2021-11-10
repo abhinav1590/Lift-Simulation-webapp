@@ -1,11 +1,16 @@
 import { varButton, buttonId } from "./constants.js";
 
 // This is where no. of lifts, position, speed gets calculated
-var liftArray = [];
+let right = 45; 
 let i = 1;
-let right = 45 ; 
+var liftArray = [];
+var rightDoors = [];
+var leftDoors = [];
 while(i !== 5){
+
     liftArray.push(document.getElementById(`${'lift'.concat(i.toString())}`));
+    rightDoors.push(document.getElementById(`${'rightDoor'.concat(i.toString())}`))
+    leftDoors.push(document.getElementById(`${'leftDoor'.concat(i.toString())}`))
     liftArray[i-1].style.right = (right).toString() + '%';
     right -= 10;
     i++ ; 
@@ -35,10 +40,9 @@ buttonId.onclick = () => {
     }
 }
 const liftTrans = (initial_pos) => {
-
-    liftArray.forEach(item => {
-      item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';
-    });
+  liftArray.forEach(item => {
+    item.style.transitionDuration = (trans*Math.abs((parseInt(item.style.bottom) - initial_pos)/10)).toString()+'s';
+  });
 }
 
-export { liftArray, liftTrans };
+export { liftArray, liftTrans, leftDoors, rightDoors };
