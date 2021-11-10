@@ -1,6 +1,7 @@
-import { liftTrans } from "./lifts.js";
+import liftTrans from "./lifts.js";
 import { callBtn } from "./constants.js";
-import {liftDistance, addAnimation} from "./distance.js";
+import { liftDistance } from "./distance.js";
+import addAnimation from "./door.js";
 import switcher from "./constants.js";
 
 const moveLift = (el) => {

@@ -1,4 +1,4 @@
-import { liftArray,leftDoors, rightDoors } from "./lifts.js";
+import { liftArray,leftDoors, rightDoors } from "./constants.js";
 
 let liftSel, doorLeft, doorRight ;
 const liftDistance = (pos) => {
@@ -25,17 +25,4 @@ const liftDistance = (pos) => {
     liftArray[position].style.bottom = pos.toString() + '%';
 }
 
-const addAnimation = () => {
-    liftSel.addEventListener('transitionend', () => {
-        doorLeft.style.animation = 'openDoor 2.5s';
-        doorRight.style.animation = 'openDoor 2.5s';
-    });
-    liftSel.addEventListener('animationend', () => {
-        doorLeft.style.animation = 'closeDoor 2.5s';
-    doorRight.style.animation = 'closeDoor 2.5s';
-    });
-    doorLeft.style.removeProperty('animation');
-    doorRight.style.removeProperty('animation');
-}
-
-export {liftDistance, addAnimation}; 
+export { liftDistance, liftSel, doorLeft, doorRight }; 
